@@ -1,11 +1,8 @@
-
 def count_games(file_name):
 
     with open(file_name) as file:
         result = len(file.readlines())
     return result
-
-# count_games("game_stat.txt")
 
 
 def decide(file_name, year):
@@ -20,8 +17,6 @@ def decide(file_name, year):
     else:
         return True
 
-# decide("game_stat.txt", 1935)
-
 
 def get_latest(file_name):
 
@@ -33,8 +28,6 @@ def get_latest(file_name):
             title_and_year.update({line.split("\t")[0] : line.split("\t")[2]})
 
     return max(title_and_year, key=title_and_year.get)
-
-# get_latest("game_stat.txt")
 
 
 def count_by_genre(file_name, genre):
@@ -53,8 +46,6 @@ def count_by_genre(file_name, genre):
 
     return genre_counter
 
-# count_by_genre("game_stat.txt", "Simulation")
-
 
 def get_line_number_by_title(file_name, title):
 
@@ -68,5 +59,3 @@ def get_line_number_by_title(file_name, title):
                 raise ValueError("%s is not on the list." %title)
         except ValueError as err:
             print("FAILURE! %s" % err)
-
-get_line_number_by_title("game_stat.txt", "Half-Life")
