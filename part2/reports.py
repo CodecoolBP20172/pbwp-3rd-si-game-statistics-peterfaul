@@ -35,6 +35,7 @@ def get_selling_avg(file_name):
             summa += float(line.split("\t")[1])
             len_of_list += 1
             average = summa / len_of_list
+            average = round(average)
 
     return average
 

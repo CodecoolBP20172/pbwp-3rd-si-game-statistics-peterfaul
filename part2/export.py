@@ -1,33 +1,33 @@
 import printing
 
-def get_most_played_export(file_name):
+def get_most_played_export(file_name, export_file):
 
     export_file.write("{}\n".format(printing.get_most_played_print(file_name)))
 
 
-def sum_sold_export(file_name):
+def sum_sold_export(file_name, export_file):
 
     export_file.write("{}\n".format(printing.sum_sold_print(file_name)))
 
 
-def get_selling_avg_export(file_name):
+def get_selling_avg_export(file_name, export_file):
 
     export_file.write("{}\n".format(printing.get_selling_avg_print(file_name)))
 
 
-def count_longest_title_export(file_name):
+def count_longest_title_export(file_name, export_file):
 
     export_file.write("{}\n".format(printing.count_longest_title_print(file_name)))
 
 
-def get_date_avg_export(file_name):
+def get_date_avg_export(file_name, export_file):
 
     export_file.write("{}\n".format(printing.get_date_avg_print(file_name)))
 
 
-def get_game_export(file_name, title):
+def get_game_export(file_name, title, export_file):
 
-    export_file.write("{}\n".format(printing.get_game_print(file_name)))
+    export_file.write("{}\n".format(printing.get_game_print(file_name, title)))
 
 
 def main():
