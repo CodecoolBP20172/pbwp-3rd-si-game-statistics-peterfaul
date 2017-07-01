@@ -79,3 +79,47 @@ def get_game(file_name, title):
                 props_of_games[4] = props_of_games[4].rstrip()
 
     return props_of_games
+
+
+# def count_grouped_by_genre(file_name):
+#
+#     genre_counter = 0
+#     counter = 0
+#     list_of_genres = []
+#     genre_count = {}
+#     x = 0
+#
+#     with open(file_name) as games:
+#         result = len(games.readlines())
+#
+#     with open(file_name) as games:
+#         for line in games:
+#             list_of_genres.append(line.split("\t")[3])
+#
+#     while counter <= result:
+#         for genre in list_of_genres:
+#             counter += 1
+#             if genre == list_of_genres[x]:
+#                 genre_counter += 1
+#
+#     with open(file_name) as games:
+#         for line in games:
+#             genre_count.update({line.split("\t")[3] : genre_counter})
+#
+#     print(list_of_genres)
+#     print(genre_count)
+#
+# count_grouped_by_genre("game_stat.txt")
+
+
+def get_date_ordered(file_name):
+
+    with open(file_name) as games:
+        for line in games.readlines():
+
+
+
+
+
+
+get_date_ordered("game_stat.txt")
